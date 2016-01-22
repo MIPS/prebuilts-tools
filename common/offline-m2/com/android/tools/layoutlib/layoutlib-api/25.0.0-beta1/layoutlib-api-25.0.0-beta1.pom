@@ -33,12 +33,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>common</artifactId>
-      <version>25.0.0-beta1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
@@ -46,7 +40,7 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>annotations</artifactId>
+      <artifactId>common</artifactId>
       <version>25.0.0-beta1</version>
       <scope>compile</scope>
     </dependency>
@@ -54,6 +48,12 @@
       <groupId>com.intellij</groupId>
       <artifactId>annotations</artifactId>
       <version>12.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>annotations</artifactId>
+      <version>25.0.0-beta1</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
