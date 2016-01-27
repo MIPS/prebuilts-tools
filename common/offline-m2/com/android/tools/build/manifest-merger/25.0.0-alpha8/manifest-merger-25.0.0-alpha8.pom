@@ -33,16 +33,16 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>sdk-common</artifactId>
+      <version>25.0.0-alpha8</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-all</artifactId>
       <version>1.9.5</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>common</artifactId>
-      <version>25.0.0-alpha8</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
@@ -57,15 +57,15 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>sdk-common</artifactId>
-      <version>25.0.0-alpha8</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
       <version>2.2.4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>common</artifactId>
+      <version>25.0.0-alpha8</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>

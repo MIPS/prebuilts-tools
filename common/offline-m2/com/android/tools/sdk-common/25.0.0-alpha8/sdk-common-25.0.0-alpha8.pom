@@ -28,7 +28,7 @@
   <dependencies>
     <dependency>
       <groupId>com.android.tools.build</groupId>
-      <artifactId>builder-model</artifactId>
+      <artifactId>builder-test-api</artifactId>
       <version>2.0.0-alpha8</version>
       <scope>compile</scope>
     </dependency>
@@ -58,15 +58,9 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools.build</groupId>
-      <artifactId>builder-test-api</artifactId>
+      <artifactId>builder-model</artifactId>
       <version>2.0.0-alpha8</version>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>testutils</artifactId>
-      <version>25.0.0-alpha8</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.easymock</groupId>
@@ -79,6 +73,12 @@
       <artifactId>bcpkix-jdk15on</artifactId>
       <version>1.48</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>testutils</artifactId>
+      <version>25.0.0-alpha8</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>
