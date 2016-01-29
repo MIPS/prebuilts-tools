@@ -27,15 +27,21 @@
   </scm>
   <dependencies>
     <dependency>
-      <groupId>net.sf.kxml</groupId>
-      <artifactId>kxml2</artifactId>
-      <version>2.3.0</version>
+      <groupId>com.android.tools</groupId>
+      <artifactId>sdk-common</artifactId>
+      <version>25.0.0-alpha9</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
       <artifactId>sdklib</artifactId>
       <version>25.0.0-alpha9</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.kxml</groupId>
+      <artifactId>kxml2</artifactId>
+      <version>2.3.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -52,7 +58,7 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>sdk-common</artifactId>
+      <artifactId>common</artifactId>
       <version>25.0.0-alpha9</version>
       <scope>compile</scope>
     </dependency>
@@ -60,12 +66,6 @@
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
       <version>2.2.4</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>common</artifactId>
-      <version>25.0.0-alpha9</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
