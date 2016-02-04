@@ -27,16 +27,16 @@
   </scm>
   <dependencies>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>testutils</artifactId>
-      <version>25.0.0-beta2</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>com.android.tools.jill</groupId>
       <artifactId>jill-api</artifactId>
       <version>0.9.0</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>testutils</artifactId>
+      <version>25.0.0-beta2</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
@@ -45,21 +45,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.jack</groupId>
-      <artifactId>jack-api</artifactId>
-      <version>0.9.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk15on</artifactId>
       <version>1.48</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.ow2.asm</groupId>
-      <artifactId>asm-tree</artifactId>
-      <version>5.0.3</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -69,21 +57,15 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>manifest-merger</artifactId>
-      <version>25.0.0-beta2</version>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm-tree</artifactId>
+      <version>5.0.3</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.squareup</groupId>
       <artifactId>javawriter</artifactId>
       <version>2.5.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>sdklib</artifactId>
-      <version>25.0.0-beta2</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -99,21 +81,39 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>common</artifactId>
+      <version>25.0.0-beta2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>manifest-merger</artifactId>
+      <version>25.0.0-beta2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.ow2.asm</groupId>
-      <artifactId>asm</artifactId>
-      <version>5.0.3</version>
+      <groupId>com.android.tools</groupId>
+      <artifactId>sdklib</artifactId>
+      <version>25.0.0-beta2</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>common</artifactId>
-      <version>25.0.0-beta2</version>
+      <groupId>com.android.tools.jack</groupId>
+      <artifactId>jack-api</artifactId>
+      <version>0.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm</artifactId>
+      <version>5.0.3</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
