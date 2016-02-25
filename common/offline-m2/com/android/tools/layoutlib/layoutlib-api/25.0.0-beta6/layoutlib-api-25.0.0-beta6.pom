@@ -34,7 +34,7 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>common</artifactId>
+      <artifactId>annotations</artifactId>
       <version>25.0.0-beta6</version>
       <scope>compile</scope>
     </dependency>
@@ -52,7 +52,7 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>annotations</artifactId>
+      <artifactId>common</artifactId>
       <version>25.0.0-beta6</version>
       <scope>compile</scope>
     </dependency>

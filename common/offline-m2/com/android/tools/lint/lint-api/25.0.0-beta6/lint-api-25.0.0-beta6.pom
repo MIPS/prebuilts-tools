@@ -39,15 +39,15 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.external.lombok</groupId>
-      <artifactId>lombok-ast</artifactId>
-      <version>0.2.3</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.android.tools</groupId>
       <artifactId>sdk-common</artifactId>
       <version>25.0.0-beta6</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.external.lombok</groupId>
+      <artifactId>lombok-ast</artifactId>
+      <version>0.2.3</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
