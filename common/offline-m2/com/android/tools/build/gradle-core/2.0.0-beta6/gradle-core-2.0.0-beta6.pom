@@ -39,12 +39,6 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.databinding</groupId>
-      <artifactId>compilerCommon</artifactId>
-      <version>2.0.0-beta6</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-all</artifactId>
       <version>1.9.5</version>
@@ -55,6 +49,12 @@
       <artifactId>asm-commons</artifactId>
       <version>5.0.3</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>tools.base</groupId>
+      <artifactId>project-test-lib</artifactId>
+      <version>unspecified</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>tools.base.instant-run</groupId>
@@ -75,16 +75,16 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>builder</artifactId>
+      <groupId>com.android.databinding</groupId>
+      <artifactId>compilerCommon</artifactId>
       <version>2.0.0-beta6</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>tools.base.instant-run</groupId>
-      <artifactId>instant-run-annotations</artifactId>
-      <version>unspecified</version>
-      <scope>test</scope>
+      <groupId>com.android.tools.lint</groupId>
+      <artifactId>lint</artifactId>
+      <version>25.0.0-beta6</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -105,21 +105,21 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.lint</groupId>
-      <artifactId>lint</artifactId>
-      <version>25.0.0-beta6</version>
+      <groupId>tools.base.instant-run</groupId>
+      <artifactId>instant-run-annotations</artifactId>
+      <version>unspecified</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>builder</artifactId>
+      <version>2.0.0-beta6</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.google.truth</groupId>
       <artifactId>truth</artifactId>
       <version>0.28</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>tools.base</groupId>
-      <artifactId>project-test-lib</artifactId>
-      <version>unspecified</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
