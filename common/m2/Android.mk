@@ -21,11 +21,10 @@ include $(BUILD_PREBUILT)
 # com.squareup.haha prebuilt.
 
 include $(CLEAR_VARS)
+
 LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
     squareup-haha-prebuilt:repository/com/squareup/haha/haha/1.3/haha-1.3.jar
 
 include $(BUILD_MULTI_PREBUILT)
-
-include $(CLEAR_VARS)
 
 ###########################################
