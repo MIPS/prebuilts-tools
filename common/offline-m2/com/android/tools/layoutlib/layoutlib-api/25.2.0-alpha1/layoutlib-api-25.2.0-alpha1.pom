@@ -27,16 +27,16 @@
   </scm>
   <dependencies>
     <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>annotations</artifactId>
+      <version>25.2.0-alpha1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>net.sf.kxml</groupId>
-      <artifactId>kxml2</artifactId>
-      <version>2.3.0</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
@@ -45,9 +45,9 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>annotations</artifactId>
-      <version>25.2.0-alpha1</version>
+      <groupId>net.sf.kxml</groupId>
+      <artifactId>kxml2</artifactId>
+      <version>2.3.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
