@@ -33,9 +33,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.truth</groupId>
-      <artifactId>truth</artifactId>
-      <version>0.28</version>
+      <groupId>tools.base</groupId>
+      <artifactId>project-test-lib</artifactId>
+      <version>unspecified</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -45,9 +45,9 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>tools.base</groupId>
-      <artifactId>project-test-lib</artifactId>
-      <version>unspecified</version>
+      <groupId>com.google.truth</groupId>
+      <artifactId>truth</artifactId>
+      <version>0.28</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

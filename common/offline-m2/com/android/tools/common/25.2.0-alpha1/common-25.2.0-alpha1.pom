@@ -39,16 +39,16 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.truth</groupId>
-      <artifactId>truth</artifactId>
-      <version>0.28</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>com.android.tools</groupId>
       <artifactId>annotations</artifactId>
       <version>25.2.0-alpha1</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.truth</groupId>
+      <artifactId>truth</artifactId>
+      <version>0.28</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>

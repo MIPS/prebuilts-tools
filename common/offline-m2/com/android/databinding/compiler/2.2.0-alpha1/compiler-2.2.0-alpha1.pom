@@ -33,6 +33,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.android.databinding</groupId>
+      <artifactId>baseLibrary</artifactId>
+      <version>2.2.0-alpha1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
@@ -60,12 +66,6 @@
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
       <version>2.4</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.databinding</groupId>
-      <artifactId>baseLibrary</artifactId>
-      <version>2.2.0-alpha1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
