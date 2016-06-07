@@ -27,10 +27,22 @@
   </scm>
   <dependencies>
     <dependency>
+      <groupId>com.android.databinding</groupId>
+      <artifactId>compilerCommon</artifactId>
+      <version>2.2.0-alpha3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
       <version>1.6.3</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>transform-api</artifactId>
+      <version>2.0.0-deprecated-use-gradle-api</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -45,15 +57,27 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>testutils</artifactId>
+      <version>25.2.0-alpha3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-commons</artifactId>
       <version>5.0.4</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.databinding</groupId>
-      <artifactId>compilerCommon</artifactId>
-      <version>2.2.0-alpha3</version>
+      <groupId>tools.base</groupId>
+      <artifactId>project-test-lib</artifactId>
+      <version>unspecified</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jacoco</groupId>
+      <artifactId>org.jacoco.core</artifactId>
+      <version>0.7.5.201505241946</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -63,14 +87,20 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>tools.base.instant-run</groupId>
+      <artifactId>instant-run-annotations</artifactId>
+      <version>unspecified</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.jacoco</groupId>
-      <artifactId>org.jacoco.core</artifactId>
+      <artifactId>org.jacoco.report</artifactId>
       <version>0.7.5.201505241946</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>tools.base.instant-run</groupId>
-      <artifactId>instant-run-annotations</artifactId>
+      <artifactId>instant-run-runtime</artifactId>
       <version>unspecified</version>
       <scope>test</scope>
     </dependency>
@@ -78,12 +108,6 @@
       <groupId>com.android.tools.build</groupId>
       <artifactId>builder</artifactId>
       <version>2.2.0-alpha3</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jacoco</groupId>
-      <artifactId>org.jacoco.report</artifactId>
-      <version>0.7.5.201505241946</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -99,12 +123,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>tools.base</groupId>
-      <artifactId>project-test-lib</artifactId>
-      <version>unspecified</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>net.sf.proguard</groupId>
       <artifactId>proguard-gradle</artifactId>
       <version>5.2.1</version>
@@ -117,10 +135,10 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>testutils</artifactId>
-      <version>25.2.0-alpha3</version>
-      <scope>test</scope>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>gradle-api</artifactId>
+      <version>2.2.0-alpha3</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
@@ -129,28 +147,10 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>transform-api</artifactId>
-      <version>2.0.0-deprecated-use-gradle-api</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>gradle-api</artifactId>
-      <version>2.2.0-alpha3</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
       <version>2.6.1</version>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>tools.base.instant-run</groupId>
-      <artifactId>instant-run-runtime</artifactId>
-      <version>unspecified</version>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>
