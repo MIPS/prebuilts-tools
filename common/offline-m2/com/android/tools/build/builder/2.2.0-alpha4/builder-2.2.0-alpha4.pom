@@ -27,10 +27,28 @@
   </scm>
   <dependencies>
     <dependency>
+      <groupId>com.android.tools.ddms</groupId>
+      <artifactId>ddmlib</artifactId>
+      <version>25.2.0-alpha4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>common</artifactId>
+      <version>25.2.0-alpha4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.jill</groupId>
+      <artifactId>jill-api</artifactId>
+      <version>0.10.0</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
@@ -40,8 +58,8 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools.build</groupId>
-      <artifactId>manifest-merger</artifactId>
-      <version>25.2.0-alpha4</version>
+      <artifactId>builder-test-api</artifactId>
+      <version>2.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -51,32 +69,14 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>testutils</artifactId>
-      <version>25.2.0-alpha4</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>common</artifactId>
-      <version>25.2.0-alpha4</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.android.tools.jack</groupId>
       <artifactId>jack-api</artifactId>
       <version>0.10.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.jill</groupId>
-      <artifactId>jill-api</artifactId>
-      <version>0.10.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>sdk-common</artifactId>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>manifest-merger</artifactId>
       <version>25.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>
@@ -87,6 +87,18 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>sdklib</artifactId>
+      <version>25.2.0-alpha4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>testutils</artifactId>
+      <version>25.2.0-alpha4</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>com.google.truth</groupId>
       <artifactId>truth</artifactId>
       <version>0.28</version>
@@ -94,13 +106,7 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>sdklib</artifactId>
-      <version>25.2.0-alpha4</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools.ddms</groupId>
-      <artifactId>ddmlib</artifactId>
+      <artifactId>sdk-common</artifactId>
       <version>25.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>
@@ -120,12 +126,6 @@
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpkix-jdk15on</artifactId>
       <version>1.48</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>builder-test-api</artifactId>
-      <version>2.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
