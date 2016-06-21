@@ -27,6 +27,12 @@
   </scm>
   <dependencies>
     <dependency>
+      <groupId>com.android.databinding</groupId>
+      <artifactId>baseLibrary</artifactId>
+      <version>2.2.0-alpha4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.antlr</groupId>
       <artifactId>antlr4</artifactId>
       <version>4.5.3</version>
@@ -60,12 +66,6 @@
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
       <version>2.4</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.databinding</groupId>
-      <artifactId>baseLibrary</artifactId>
-      <version>2.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>

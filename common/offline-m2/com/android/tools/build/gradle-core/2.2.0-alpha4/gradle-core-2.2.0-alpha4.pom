@@ -27,10 +27,22 @@
   </scm>
   <dependencies>
     <dependency>
+      <groupId>tools.base.instant-run</groupId>
+      <artifactId>instant-run-runtime</artifactId>
+      <version>unspecified</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
       <version>1.6.3</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>builder</artifactId>
+      <version>2.2.0-alpha4</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -45,15 +57,15 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>gradle-api</artifactId>
-      <version>2.2.0-alpha4</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-commons</artifactId>
       <version>5.0.4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>transform-api</artifactId>
+      <version>2.0.0-deprecated-use-gradle-api</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -69,27 +81,9 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.databinding</groupId>
-      <artifactId>compilerCommon</artifactId>
-      <version>2.2.0-alpha4</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>builder</artifactId>
-      <version>2.2.0-alpha4</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>17.0</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>net.sf.jopt-simple</groupId>
-      <artifactId>jopt-simple</artifactId>
-      <version>4.9</version>
+      <groupId>com.android.tools.lint</groupId>
+      <artifactId>lint</artifactId>
+      <version>25.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -97,24 +91,6 @@
       <artifactId>testutils</artifactId>
       <version>25.2.0-alpha4</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>net.sf.proguard</groupId>
-      <artifactId>proguard-gradle</artifactId>
-      <version>5.2.1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.truth</groupId>
-      <artifactId>truth</artifactId>
-      <version>0.28</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools.lint</groupId>
-      <artifactId>lint</artifactId>
-      <version>25.2.0-alpha4</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>tools.base</groupId>
@@ -129,22 +105,46 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>tools.base.instant-run</groupId>
-      <artifactId>instant-run-runtime</artifactId>
-      <version>unspecified</version>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>17.0</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.jopt-simple</groupId>
+      <artifactId>jopt-simple</artifactId>
+      <version>4.9</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.proguard</groupId>
+      <artifactId>proguard-gradle</artifactId>
+      <version>5.2.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.truth</groupId>
+      <artifactId>truth</artifactId>
+      <version>0.28</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>gradle-api</artifactId>
+      <version>2.2.0-alpha4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.databinding</groupId>
+      <artifactId>compilerCommon</artifactId>
+      <version>2.2.0-alpha4</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-all</artifactId>
       <version>1.9.5</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>transform-api</artifactId>
-      <version>2.0.0-deprecated-use-gradle-api</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>

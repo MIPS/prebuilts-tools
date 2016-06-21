@@ -28,7 +28,7 @@
   <dependencies>
     <dependency>
       <groupId>com.android.databinding</groupId>
-      <artifactId>compilerCommon</artifactId>
+      <artifactId>baseLibrary</artifactId>
       <version>2.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>
@@ -64,7 +64,7 @@
     </dependency>
     <dependency>
       <groupId>com.android.databinding</groupId>
-      <artifactId>baseLibrary</artifactId>
+      <artifactId>compilerCommon</artifactId>
       <version>2.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>
