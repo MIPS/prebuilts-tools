@@ -40,12 +40,6 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>sdklib</artifactId>
-      <version>25.2.0-alpha4</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
       <artifactId>common</artifactId>
       <version>25.2.0-alpha4</version>
       <scope>compile</scope>
@@ -53,6 +47,12 @@
     <dependency>
       <groupId>com.android.tools</groupId>
       <artifactId>sdk-common</artifactId>
+      <version>25.2.0-alpha4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>sdklib</artifactId>
       <version>25.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>

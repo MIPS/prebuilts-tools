@@ -39,14 +39,14 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>dvlib</artifactId>
+      <groupId>com.android.tools.layoutlib</groupId>
+      <artifactId>layoutlib-api</artifactId>
       <version>25.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.layoutlib</groupId>
-      <artifactId>layoutlib-api</artifactId>
+      <groupId>com.android.tools</groupId>
+      <artifactId>dvlib</artifactId>
       <version>25.2.0-alpha4</version>
       <scope>compile</scope>
     </dependency>
