@@ -23,9 +23,9 @@ dependency_libs=' -lpthread -lz'
 weak_library_names=''
 
 # Version information for libprotobuf-lite.
-current=9
+current=8
 age=0
-revision=1
+revision=0
 
 # Is this an already installed library?
 installed=yes
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/tmp/proto/bits/lib'
+libdir='/usr/local/lib'

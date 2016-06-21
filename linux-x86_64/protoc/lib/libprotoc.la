@@ -17,15 +17,15 @@ old_library='libprotoc.a'
 inherited_linker_flags=' -pthread'
 
 # Libraries that this one depends upon.
-dependency_libs=' /tmp/proto/bits/lib/libprotobuf.la -lpthread -lz'
+dependency_libs=' /usr/local/lib/libprotobuf.la -lpthread -lz'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
 
 # Version information for libprotoc.
-current=9
+current=8
 age=0
-revision=1
+revision=0
 
 # Is this an already installed library?
 installed=yes
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/tmp/proto/bits/lib'
+libdir='/usr/local/lib'
