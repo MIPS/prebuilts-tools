@@ -28,7 +28,7 @@
   <dependencies>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>sdklib</artifactId>
+      <artifactId>sdk-common</artifactId>
       <version>25.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
@@ -52,7 +52,7 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>sdk-common</artifactId>
+      <artifactId>sdklib</artifactId>
       <version>25.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>

@@ -27,15 +27,15 @@
   </scm>
   <dependencies>
     <dependency>
-      <groupId>com.android.tools.lint</groupId>
-      <artifactId>lint-api</artifactId>
-      <version>25.2.0-beta1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-analysis</artifactId>
       <version>5.0.4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.lint</groupId>
+      <artifactId>lint-api</artifactId>
+      <version>25.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>

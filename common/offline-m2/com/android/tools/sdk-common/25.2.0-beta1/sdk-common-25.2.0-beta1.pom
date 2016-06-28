@@ -27,9 +27,9 @@
   </scm>
   <dependencies>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>sdklib</artifactId>
-      <version>25.2.0-beta1</version>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>builder-test-api</artifactId>
+      <version>2.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -40,7 +40,7 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools.build</groupId>
-      <artifactId>builder-test-api</artifactId>
+      <artifactId>builder-model</artifactId>
       <version>2.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
@@ -51,9 +51,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>builder-model</artifactId>
-      <version>2.2.0-beta1</version>
+      <groupId>com.android.tools</groupId>
+      <artifactId>sdklib</artifactId>
+      <version>25.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
