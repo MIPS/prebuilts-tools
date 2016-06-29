@@ -27,6 +27,12 @@
   </scm>
   <dependencies>
     <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>common</artifactId>
+      <version>25.2.0-beta1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>17.0</version>
@@ -39,8 +45,20 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>com.android.tools.analytics-library</groupId>
+      <artifactId>shared</artifactId>
+      <version>25.2.0-beta1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>common</artifactId>
+      <artifactId>testutils</artifactId>
+      <version>25.2.0-beta1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>annotations</artifactId>
       <version>25.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
@@ -57,28 +75,10 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.analytics-library</groupId>
-      <artifactId>shared</artifactId>
-      <version>25.2.0-beta1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
       <version>2.5.0</version>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>annotations</artifactId>
-      <version>25.2.0-beta1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>testutils</artifactId>
-      <version>25.2.0-beta1</version>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>

@@ -33,6 +33,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.android.tools.layoutlib</groupId>
+      <artifactId>layoutlib-api</artifactId>
+      <version>25.2.0-beta1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
@@ -40,13 +46,13 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>repository</artifactId>
+      <artifactId>dvlib</artifactId>
       <version>25.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.layoutlib</groupId>
-      <artifactId>layoutlib-api</artifactId>
+      <groupId>com.android.tools</groupId>
+      <artifactId>repository</artifactId>
       <version>25.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
@@ -66,12 +72,6 @@
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpmime</artifactId>
       <version>4.1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>dvlib</artifactId>
-      <version>25.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
