@@ -27,12 +27,6 @@
   </scm>
   <dependencies>
     <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>gradle-api</artifactId>
-      <version>2.2.0-beta1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
       <version>1.6.3</version>
@@ -69,20 +63,20 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>transform-api</artifactId>
-      <version>2.0.0-deprecated-use-gradle-api</version>
+      <groupId>org.jacoco</groupId>
+      <artifactId>org.jacoco.core</artifactId>
+      <version>0.7.5.201505241946</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.lint</groupId>
-      <artifactId>lint</artifactId>
-      <version>25.2.0-beta1</version>
+      <groupId>com.android.databinding</groupId>
+      <artifactId>compilerCommon</artifactId>
+      <version>2.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jacoco</groupId>
-      <artifactId>org.jacoco.core</artifactId>
+      <artifactId>org.jacoco.report</artifactId>
       <version>0.7.5.201505241946</version>
       <scope>compile</scope>
     </dependency>
@@ -93,15 +87,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.jacoco</groupId>
-      <artifactId>org.jacoco.report</artifactId>
-      <version>0.7.5.201505241946</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>builder</artifactId>
-      <version>2.2.0-beta1</version>
+      <groupId>com.android.tools.lint</groupId>
+      <artifactId>lint</artifactId>
+      <version>25.2.0-beta1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -111,22 +99,16 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.databinding</groupId>
-      <artifactId>compilerCommon</artifactId>
-      <version>2.2.0-beta1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>net.sf.jopt-simple</groupId>
       <artifactId>jopt-simple</artifactId>
       <version>4.9</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>testutils</artifactId>
-      <version>25.2.0-beta1</version>
-      <scope>test</scope>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>builder</artifactId>
+      <version>2.2.0-beta1</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>net.sf.proguard</groupId>
@@ -144,6 +126,24 @@
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
       <version>2.5.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>gradle-api</artifactId>
+      <version>2.2.0-beta1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>testutils</artifactId>
+      <version>25.2.0-beta1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>transform-api</artifactId>
+      <version>2.0.0-deprecated-use-gradle-api</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

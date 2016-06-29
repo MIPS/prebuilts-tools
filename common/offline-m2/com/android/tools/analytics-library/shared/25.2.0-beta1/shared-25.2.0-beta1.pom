@@ -27,12 +27,6 @@
   </scm>
   <dependencies>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>common</artifactId>
-      <version>25.2.0-beta1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>17.0</version>
@@ -45,9 +39,21 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>testutils</artifactId>
+      <groupId>com.android.tools.analytics-library</groupId>
+      <artifactId>protos</artifactId>
       <version>25.2.0-beta1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>common</artifactId>
+      <version>25.2.0-beta1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.truth</groupId>
+      <artifactId>truth</artifactId>
+      <version>0.28</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -57,15 +63,9 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.analytics-library</groupId>
-      <artifactId>protos</artifactId>
+      <groupId>com.android.tools</groupId>
+      <artifactId>testutils</artifactId>
       <version>25.2.0-beta1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.truth</groupId>
-      <artifactId>truth</artifactId>
-      <version>0.28</version>
       <scope>test</scope>
     </dependency>
     <dependency>
