@@ -27,15 +27,33 @@
   </scm>
   <dependencies>
     <dependency>
+      <groupId>com.android.tools.lint</groupId>
+      <artifactId>lint</artifactId>
+      <version>25.2.0-alpha5</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
       <version>1.6.3</version>
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>tools.base.instant-run</groupId>
+      <artifactId>instant-run-runtime</artifactId>
+      <version>unspecified</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>testutils</artifactId>
+      <version>25.2.0-alpha5</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -51,24 +69,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.lint</groupId>
-      <artifactId>lint</artifactId>
-      <version>25.2.0-alpha5</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.databinding</groupId>
-      <artifactId>compilerCommon</artifactId>
-      <version>2.2.0-alpha5</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>testutils</artifactId>
-      <version>25.2.0-alpha5</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.jacoco</groupId>
       <artifactId>org.jacoco.core</artifactId>
       <version>0.7.5.201505241946</version>
@@ -76,14 +76,8 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools.build</groupId>
-      <artifactId>builder</artifactId>
-      <version>2.2.0-alpha5</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>gradle-api</artifactId>
-      <version>2.2.0-alpha5</version>
+      <artifactId>transform-api</artifactId>
+      <version>2.0.0-deprecated-use-gradle-api</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -93,10 +87,10 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>tools.base</groupId>
-      <artifactId>project-test-lib</artifactId>
-      <version>unspecified</version>
-      <scope>test</scope>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>builder</artifactId>
+      <version>2.2.0-alpha5</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
@@ -108,12 +102,6 @@
       <groupId>net.sf.jopt-simple</groupId>
       <artifactId>jopt-simple</artifactId>
       <version>4.9</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>transform-api</artifactId>
-      <version>2.0.0-deprecated-use-gradle-api</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -135,8 +123,14 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>tools.base.instant-run</groupId>
-      <artifactId>instant-run-runtime</artifactId>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>gradle-api</artifactId>
+      <version>2.2.0-alpha5</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>tools.base</groupId>
+      <artifactId>project-test-lib</artifactId>
       <version>unspecified</version>
       <scope>test</scope>
     </dependency>
@@ -145,6 +139,12 @@
       <artifactId>instant-run-annotations</artifactId>
       <version>unspecified</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.databinding</groupId>
+      <artifactId>compilerCommon</artifactId>
+      <version>2.2.0-alpha5</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>

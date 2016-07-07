@@ -27,18 +27,6 @@
   </scm>
   <dependencies>
     <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>common</artifactId>
-      <version>25.2.0-alpha5</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools.analytics-library</groupId>
-      <artifactId>protos</artifactId>
-      <version>25.2.0-alpha5</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>17.0</version>
@@ -52,7 +40,19 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>annotations</artifactId>
+      <artifactId>testutils</artifactId>
+      <version>25.2.0-alpha5</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>common</artifactId>
+      <version>25.2.0-alpha5</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.analytics-library</groupId>
+      <artifactId>protos</artifactId>
       <version>25.2.0-alpha5</version>
       <scope>compile</scope>
     </dependency>
@@ -64,9 +64,9 @@
     </dependency>
     <dependency>
       <groupId>com.android.tools</groupId>
-      <artifactId>testutils</artifactId>
+      <artifactId>annotations</artifactId>
       <version>25.2.0-alpha5</version>
-      <scope>test</scope>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.google.code.gson</groupId>

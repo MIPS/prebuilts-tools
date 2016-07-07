@@ -33,14 +33,14 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.tools.build</groupId>
-      <artifactId>builder-model</artifactId>
-      <version>2.2.0-alpha5</version>
-      <scope>compile</scope>
+      <groupId>com.android.tools</groupId>
+      <artifactId>testutils</artifactId>
+      <version>25.2.0-alpha5</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.android.tools.build</groupId>
-      <artifactId>builder-test-api</artifactId>
+      <artifactId>builder-model</artifactId>
       <version>2.2.0-alpha5</version>
       <scope>compile</scope>
     </dependency>
@@ -48,18 +48,6 @@
       <groupId>com.google.truth</groupId>
       <artifactId>truth</artifactId>
       <version>0.28</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>sdklib</artifactId>
-      <version>25.2.0-alpha5</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.tools</groupId>
-      <artifactId>testutils</artifactId>
-      <version>25.2.0-alpha5</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -78,6 +66,18 @@
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpkix-jdk15on</artifactId>
       <version>1.48</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools</groupId>
+      <artifactId>sdklib</artifactId>
+      <version>25.2.0-alpha5</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>builder-test-api</artifactId>
+      <version>2.2.0-alpha5</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
