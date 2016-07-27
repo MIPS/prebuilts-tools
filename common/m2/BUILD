@@ -106,6 +106,14 @@ java_import(
 )
 
 java_import(
+  name = "repository/org/codehaus/groovy/groovy-all/2.3.6/groovy-all-2.3.6",
+  jars = [
+      "repository/org/codehaus/groovy/groovy-all/2.3.6/groovy-all-2.3.6.jar",
+    ],
+  visibility = ["//visibility:public"],
+)
+
+java_import(
   name = "repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3",
   jars = [
       "repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar",

@@ -2,9 +2,9 @@
 load("//tools/base/bazel:bazel.bzl", "kotlin_library", "groovy_library", "kotlin_groovy_library", "fileset")
 
 java_import(
-  name = "builder-model-2.2.0-dev",
+  name = "builder-model-2.2.0-alpha6",
   jars = [
-      "builder-model-2.2.0-dev.jar",
+      "builder-model-2.2.0-alpha6.jar",
     ],
   visibility = ["//visibility:public"],
 )
