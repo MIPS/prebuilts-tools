@@ -1,0 +1,69 @@
+[
+  {
+    "pattern": "bazel-out/[^/]+/bin/([^/]+/javatests/.+/testdata)/.+\\.jar!/([^\\$]+)(\\$.+)?\\.class",
+    "vname": {
+      "corpus": "studio",
+      "path": "@1@/@2@.java"
+    }
+  },
+  {
+    "pattern": "bazel-out/[^/]+/bin/(.*?/java|javatests)/.*\\.jar!/([^\\$]+)(\\$.+)?\\.class",
+    "vname": {
+      "corpus": "studio",
+      "path": "@1@/@2@.java"
+    }
+  },
+  {
+    "pattern": "bazel-out/[^/]+/bin/[^/]+/proto/.*\\.jar!/([^\\$]+)(\\$.+)?\\.class",
+    "vname": {
+      "corpus": "studio",
+      "root": "GENERATED/proto/java",
+      "path": "@1@.java"
+    }
+  },
+  {
+    "pattern": "bazel-out/[^/]+/bin/third_party/go/src/((.*)/[^/]+\\.a)",
+    "vname": {
+      "corpus": "@2@",
+      "path": "@1@"
+    }
+  },
+  {
+    "pattern": "(/kythe_builtins/include)/(.*)",
+    "vname": {
+      "corpus": "cstdlib",
+      "root": "@1@",
+      "path": "@2@"
+    }
+  },
+  {
+    "pattern": "([^/]+/java|javatests/[^\\$]+)(\\$.+)?\\.(class|java)",
+    "vname": {
+      "corpus": "studio",
+      "path": "@1@.java"
+    }
+  },
+  {
+    "pattern": "(/usr/include/c\\+\\+/[^/]+)/(.*)",
+    "vname": {
+      "corpus": "libstdcxx",
+      "root": "@1@",
+      "path": "@2@"
+    }
+  },
+  {
+    "pattern": "/usr/include/(.*)",
+    "vname": {
+      "corpus": "cstdlib",
+      "root": "/usr/include",
+      "path": "@1@"
+    }
+  },
+  {
+    "pattern": "(.*)",
+    "vname": {
+      "corpus": "studio",
+      "path": "@1@"
+    }
+  }
+]
