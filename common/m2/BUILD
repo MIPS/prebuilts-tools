@@ -49,14 +49,6 @@ java_import(
 )
 
 java_import(
-  name = "repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3",
-  jars = [
-      "repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar",
-    ],
-  visibility = ["//visibility:public"],
-)
-
-java_import(
   name = "repository/junit/junit/4.12/junit-4.12",
   jars = [
       "repository/junit/junit/4.12/junit-4.12.jar",
@@ -89,14 +81,6 @@ java_import(
 )
 
 java_import(
-  name = "repository/org/ow2/asm/asm/5.0.3/asm-5.0.3",
-  jars = [
-      "repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar",
-    ],
-  visibility = ["//visibility:public"],
-)
-
-java_import(
   name = "repository/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5",
   jars = [
       "repository/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar",
@@ -108,14 +92,6 @@ java_import(
   name = "repository/org/codehaus/groovy/groovy-all/2.3.6/groovy-all-2.3.6",
   jars = [
       "repository/org/codehaus/groovy/groovy-all/2.3.6/groovy-all-2.3.6.jar",
-    ],
-  visibility = ["//visibility:public"],
-)
-
-java_import(
-  name = "repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3",
-  jars = [
-      "repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar",
     ],
   visibility = ["//visibility:public"],
 )
