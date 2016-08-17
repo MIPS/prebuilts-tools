@@ -1,1 +1,1 @@
-exports_files(glob(["kotlin-plugin*.zip"]));
+exports_files(glob(["kotlin-plugin*.zip"]))
