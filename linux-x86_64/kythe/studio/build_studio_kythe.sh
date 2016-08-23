@@ -22,7 +22,7 @@ mkdir -p "${OUT_ENTRIES}"
 TARGETS="$(cat tools/base/bazel/build_targets)"
 
 # Build all targets and run the kythe extractor via extra_actions.
-bazel build \
+tools/base/bazel/bazel build \
   --experimental_action_listener=${EAL} -- ${TARGETS}
 
 # Find all generated kythe index files.
