@@ -10,7 +10,7 @@ KYTHE_ROOT="$(readlink -f prebuilts/tools/linux-x86_64/kythe)"
 # Get the output path for the kythe artifacts.
 OUT="$1"
 if [ -z "${OUT}" ]; then
-  echo Usage: $0 \<out_dir\>
+  echo Usage: $0 \<out_dir\> [gcs_bucket]
   echo  e.g. $0 $HOME/studio_kythe
   echo
   echo $0 must be launched from the root of the studio branch.
@@ -19,15 +19,7 @@ fi
 OUT_ENTRIES="${OUT}/entries"
 mkdir -p "${OUT_ENTRIES}"
 
-#TODO: read from file
-TARGETS="//prebuilts/studio/... \
-  //prebuilts/tools/common/... \
-  //tools/adt/idea/... \
-  //tools/analytics-library/... \
-  //tools/base/... \
-  //tools/data-binding/... \
-  //tools/idea/... \
-  //tools/sherpa/..."
+TARGETS="$(cat tools/base/bazel/build_targets)"
 
 # Build all targets and run the kythe extractor via extra_actions.
 bazel build \
@@ -47,3 +39,9 @@ for KINDEX in ${KINDEXES}; do
       "${KINDEX}" > "${ENTRIES}"
   fi
 done;
+
+GSBUCKET="$2"
+if [ -n "${GSBUCKET}" ]; then
+  TIMESTAMP=$(date +'%s')
+  gsutil -m cp "${OUT_ENTRIES}/*" "${GSBUCKET}/${TIMESTAMP}/"
+fi
