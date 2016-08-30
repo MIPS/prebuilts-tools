@@ -39,13 +39,15 @@ KINDEXES=$(find bazel-out/local-fastbuild/extra_actions/ \
 
 # For each kythe index file run the java index to generate kythe
 # entries.
+# Ignore failures from analysis (|| true) as Kythe will do statistical analysis
+# on the entries and produce indexes for builds with 95% coverage and up.
 cd "${OUT_ENTRIES}"
 for KINDEX in ${KINDEXES}; do
   ENTRIES="$(basename "${KINDEX}").entries"
   if [ ! -f "${ENTRIES}" ]; then
     "${JDK_18_x64}/bin/java" -jar \
     "${KYTHE_ROOT}/indexers/java_indexer.jar" \
-      "${KINDEX}" > "${ENTRIES}"
+      "${KINDEX}" > "${ENTRIES}" || true
   fi
 done;
 
