@@ -22,8 +22,10 @@ mkdir -p "${OUT_ENTRIES}"
 TARGETS="$(cat tools/base/bazel/build_targets)"
 
 # Build all targets and run the kythe extractor via extra_actions.
-tools/base/bazel/bazel build \
-  --experimental_action_listener=${EAL} -- ${TARGETS}
+# ignore failures in the build as Kythe will do statistical analysis
+# on build and produce indexes for builds with 95% coverage and up.
+tools/base/bazel/bazel build --keep_going \
+  --experimental_action_listener=${EAL} -- ${TARGETS} || true
 
 # Find all generated kythe index files.
 KINDEXES=$(find bazel-out/local-fastbuild/extra_actions/ \
@@ -44,4 +46,8 @@ GSBUCKET="$2"
 if [ -n "${GSBUCKET}" ]; then
   TIMESTAMP=$(date +'%s')
   gsutil -m cp "${OUT_ENTRIES}/*" "${GSBUCKET}/${TIMESTAMP}/"
+  LATEST_FILE="$(mktemp)"
+  echo ${TIMESTAMP}>"${LATEST_FILE}"
+  gsutil cp "${LATEST_FILE}" "${GSBUCKET}/latest.txt"
+  rm "${LATEST_FILE}"
 fi
