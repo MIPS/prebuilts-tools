@@ -16,6 +16,12 @@ if [ -z "${OUT}" ]; then
   echo $0 must be launched from the root of the studio branch.
   exit 1
 fi
+
+if [ -z "${JDK_18_x64}" ]; then
+  echo $0 requires the JDK_18_x64 env variable to be defined.
+  exit 1
+fi
+
 OUT_ENTRIES="${OUT}/entries"
 mkdir -p "${OUT_ENTRIES}"
 
@@ -35,7 +41,8 @@ cd "${OUT_ENTRIES}"
 for KINDEX in ${KINDEXES}; do
   ENTRIES="$(basename "${KINDEX}").entries"
   if [ ! -f "${ENTRIES}" ]; then
-    java -jar "${KYTHE_ROOT}/indexers/java_indexer.jar" \
+    "${JDK_18_x64}/bin/java" -jar \
+    "${KYTHE_ROOT}/indexers/java_indexer.jar" \
       "${KINDEX}" > "${ENTRIES}"
   fi
 done;
