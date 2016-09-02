@@ -2,6 +2,17 @@ LOCAL_PATH:= $(call my-dir)
 
 ###########################################
 
+# com.squareup.haha prebuilt.
+
+include $(CLEAR_VARS)
+
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
+    squareup-haha-prebuilt:repository/com/squareup/haha/haha/2.0.2/haha-2.0.2.jar
+
+include $(BUILD_MULTI_PREBUILT)
+
+###########################################
+
 # trove prebuilt. Module stem is chosen so it can be used as a static library.
 
 include $(CLEAR_VARS)
@@ -18,13 +29,14 @@ include $(BUILD_PREBUILT)
 
 ###########################################
 
-# com.squareup.haha prebuilt.
+# com.google.truth prebuilt
 
 include $(CLEAR_VARS)
 
 LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
-    squareup-haha-prebuilt:repository/com/squareup/haha/haha/2.0.2/haha-2.0.2.jar
+    truth-prebuilt:/repository/com/google/truth/truth/0.28/truth-0.28.jar
 
 include $(BUILD_MULTI_PREBUILT)
 
 ###########################################
+
