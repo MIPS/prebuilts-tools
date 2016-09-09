@@ -24,14 +24,6 @@
     }
   },
   {
-    "pattern":"external/emma/(.*)",
-    "vname":{
-      "path":"@1@",
-      "corpus":"googleplex-android",
-      "root":"platform/external/emma"
-    }
-  },
-  {
     "pattern":"external/gmock/(.*)",
     "vname":{
       "path":"@1@",
