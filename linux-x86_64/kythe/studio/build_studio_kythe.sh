@@ -52,11 +52,14 @@ for KINDEX in ${KINDEXES}; do
 done;
 
 GSBUCKET="$2"
+# allow buildbot to specify gsutil script to use.
+GSUTIL="${GSUTIL:-gsutil}"
+
 if [ -n "${GSBUCKET}" ]; then
   TIMESTAMP=$(date +'%s')
   gsutil -m cp "${OUT_ENTRIES}/*" "${GSBUCKET}/${TIMESTAMP}/"
   LATEST_FILE="$(mktemp)"
   echo ${TIMESTAMP}>"${LATEST_FILE}"
-  gsutil cp "${LATEST_FILE}" "${GSBUCKET}/latest.txt"
+  "${GSUTIL}" cp "${LATEST_FILE}" "${GSBUCKET}/latest.txt"
   rm "${LATEST_FILE}"
 fi
