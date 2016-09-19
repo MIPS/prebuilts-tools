@@ -57,7 +57,7 @@ GSUTIL="${GSUTIL:-gsutil}"
 
 if [ -n "${GSBUCKET}" ]; then
   TIMESTAMP=$(date +'%s')
-  gsutil -m cp "${OUT_ENTRIES}/*" "${GSBUCKET}/${TIMESTAMP}/"
+  "${GSUTIL}" -m cp "${OUT_ENTRIES}/*" "${GSBUCKET}/${TIMESTAMP}/"
   LATEST_FILE="$(mktemp)"
   echo ${TIMESTAMP}>"${LATEST_FILE}"
   "${GSUTIL}" cp "${LATEST_FILE}" "${GSBUCKET}/latest.txt"
