@@ -5,7 +5,7 @@
   <version>99.0-does-not-exist</version>
   <versioning>
     <latest>99.0-does-not-exist</latest>
-    <release>99.0-does-not-exist</release>
+    <release>1.1.1</release>
     <versions>
       <version>1.0</version>
       <version>1.0.1</version>
@@ -19,6 +19,6 @@
       <version>1.2</version>
       <version>99.0-does-not-exist</version>
     </versions>
-    <lastUpdated>20150813034901</lastUpdated>
+    <lastUpdated>20160927173036</lastUpdated>
   </versioning>
 </metadata>
