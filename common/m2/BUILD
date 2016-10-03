@@ -18,6 +18,12 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+filegroup(
+    name = "guava-18",
+    srcs = glob(["repository/com/google/guava/guava/18.0/**"]),
+    visibility = ["//visibility:public"],
+)
+
 config_setting(
     name = "darwin",
     values = {"host_cpu": "darwin"},
