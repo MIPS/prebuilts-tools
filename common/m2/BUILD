@@ -12,7 +12,7 @@ filegroup(
     name = "grpc-plugin",
     srcs = select({
         ":darwin": ["repository/io/grpc/protoc-gen-grpc-java/0.13.2/protoc-gen-grpc-java-0.13.2-osx-x86_64.exe"],
-        ":windows": ["repository/io/grpc/protoc-gen-grpc-java/0.13.2/protoc-gen-grpc-java-0.13.2-windwos-x86_64.exe"],
+        ":windows": ["repository/io/grpc/protoc-gen-grpc-java/0.13.2/protoc-gen-grpc-java-0.13.2-windows-x86_64.exe"],
         "//conditions:default": ["repository/io/grpc/protoc-gen-grpc-java/0.13.2/protoc-gen-grpc-java-0.13.2-linux-x86_64.exe"],
     }),
     visibility = ["//visibility:public"],
