@@ -4,4 +4,5 @@ java_import(
     name = "jar",
     jars = ["lombok-ast-0.2.3.jar"],
     visibility = ["//visibility:public"],
+    tags = ["managed"],
 )

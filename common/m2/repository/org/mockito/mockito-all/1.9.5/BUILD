@@ -4,4 +4,5 @@ java_import(
     name = "jar",
     jars = ["mockito-all-1.9.5.jar"],
     visibility = ["//visibility:public"],
+    tags = ["managed"],
 )

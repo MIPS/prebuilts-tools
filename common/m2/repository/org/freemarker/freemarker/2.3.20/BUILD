@@ -4,4 +4,5 @@ java_import(
     name = "jar",
     jars = ["freemarker-2.3.20.jar"],
     visibility = ["//visibility:public"],
+    tags = ["managed"],
 )

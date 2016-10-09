@@ -4,4 +4,5 @@ java_import(
     name = "jar",
     jars = ["bcpkix-jdk15on-1.48.jar"],
     visibility = ["//visibility:public"],
+    tags = ["managed"],
 )
