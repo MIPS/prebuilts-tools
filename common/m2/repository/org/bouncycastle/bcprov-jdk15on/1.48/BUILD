@@ -3,6 +3,6 @@
 java_import(
     name = "jar",
     jars = ["bcprov-jdk15on-1.48.jar"],
-    visibility = ["//visibility:public"],
     tags = ["managed"],
+    visibility = ["//visibility:public"],
 )

@@ -3,6 +3,6 @@
 java_import(
     name = "jar",
     jars = ["jimfs-1.1.jar"],
-    visibility = ["//visibility:public"],
     tags = ["managed"],
+    visibility = ["//visibility:public"],
 )
