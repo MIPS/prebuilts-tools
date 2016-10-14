@@ -14,6 +14,7 @@ filegroup(
         "com/android/tools/build/gradle-api/2.2.0/**",
         "com/android/tools/build/gradle-core/2.2.0/**",
         "com/android/tools/build/gradle/2.2.0/**",
+        "com/android/tools/build/gradle-experimental/0.8.0/**",
         "com/android/tools/build/manifest-merger/25.2.0/**",
         "com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/**",
         "com/android/tools/common/25.2.0/**",
