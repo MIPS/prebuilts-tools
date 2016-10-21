@@ -19,12 +19,11 @@ java_binary(
     name = "java_extractor",
     main_class = "com.google.devtools.kythe.extractors.java.bazel.JavaExtractor",
     runtime_deps = [
-            ":java_extractor_jar"
+        ":java_extractor_jar",
     ],
 )
 
-
 java_import(
-    name= "java_extractor_jar",
-    jars = [ "bazel_java_extractor.jar" ],
+    name = "java_extractor_jar",
+    jars = ["bazel_java_extractor.jar"],
 )
